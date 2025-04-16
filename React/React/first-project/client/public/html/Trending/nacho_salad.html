@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/recipe2bg.jpg");
+        }
+
+        .head {
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            color: black;
+        }
+
+        .list {
+            background-color: #D5E7B8;
+            padding: 5px;
+            border-radius: 7px;
+
+        }
+
+        .fancy-arrow-list {
+            list-style-type: none;
+            padding-left: 100px;
+        }
+
+        .fancy-arrow-list li {
+            position: relative;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .fancy-arrow-list li:before {
+            content: "➤";
+            position: absolute;
+            left: 0;
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        .step-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(232, 194, 199);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid black;
+        }   
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: lightgoldenrodyellow;
+            background-color: darkred;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+
+
+        .step-content p {
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <center><h1 style="text-decoration: underline;">Nacho Chicken Salad!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>2 cups cooked chicken breast, shredded</li>
+        <li>1 can (400 grams) black beans, rinsed and drained</li>
+        <li>1 cup corn kernels (fresh, canned, or frozen)</li>
+        <li>1 red bell pepper, diced</li>
+        <li>1 green bell pepper, diced</li>
+        <li>1/2 red onion, finely chopped</li>
+        <li>1/2 cup cherry tomatoes, halved</li>
+        <li>1 avocado, diced</li>
+        <li>1/4 cup fresh cilantro, chopped</li>
+        <li>1/2 cup shredded cheddar cheese</li>
+        <li>1 bag tortilla chips, crushed</li>
+    </ul>
+    <center><h1>Dressing:</h1></center>
+    <ul class="fancy-arrow-list list">
+        <li>1/4 cup sour cream</li>
+        <li>1/4 cup mayonnaise</li>
+        <li>2 tablespoons lime juice</li>
+        <li>1 teaspoon chili powder</li>
+        <li>1 teaspoon cumin powder</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">In a large mixing bowl, combine shredded chicken, black beans, corn kernels, red bell pepper, green bell pepper, red onion, cherry tomatoes, avocado, and fresh cilantro.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">In a separate small bowl, whisk together sour cream, mayonnaise, lime juice, chili powder, cumin powder, salt, and pepper to make the dressing.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Pour the dressing over the chicken and vegetable mixture and toss to coat evenly.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Sprinkle shredded cheddar cheese and crushed tortilla chips over the salad.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Garnish with additional fresh cilantro if desired and serve immediately.</div>
+        </div>
+    </div>
+</body>

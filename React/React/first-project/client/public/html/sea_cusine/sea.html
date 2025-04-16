@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southeast Asian Cuisine</title>
+    <style>
+        body {
+            background-color: #f5f5dc;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('/assets/sea_background.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        .content {
+            padding: 20px;
+            filter: blur(10px); /* Initially blurred */
+            transition: filter 0.5s ease-in-out;
+        }
+
+        .cuisine-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 3px solid #f49797;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+        }
+
+        .cuisine-box img {
+            height:300px;
+            width: 400px;
+            border-radius: 5px;
+        }
+
+        .learn-more {
+            background-color: #ff9999;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .learn-more:hover {
+            background-color: #ff6666;
+        }
+
+        /* Payment Overlay */
+        .payment-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .payment-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .pay-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .pay-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Payment Overlay -->
+    <div class="payment-overlay" id="paymentOverlay">
+        <div class="payment-box">
+            <h2>Access Restricted</h2>
+            <p>Please complete the payment to continue.</p>
+            <p><center>$20.00</center></p>
+            <button class="pay-button" onclick="unlockPage()">Pay Now</button>
+        </div>
+    </div>
+
+    <h1 style="background-color: rgba(245, 189, 117, 0.748);">Popular Southeast Asian Cuisines</h1>
+
+    <div class="content" id="mainContent">
+        <div class="cuisine-box">
+            <h2>Thai Cuisine</h2>
+            <a href="/html/sea_cusine/thai/thai_cusine.html">
+            <img src="/assets/tom_yum.jpg" alt="Thai cuisine"></a>
+            <p>Popular dishes include Pad Thai, Tom Yum, and Green Curry.</p>
+        </div>
+        
+        <div class="cuisine-box">
+            <h2>Vietnamese Cuisine</h2>
+            <a href="/html/sea_cusine/vietnamese/vietnamese_cuisine.html">
+            <img src="/assets/pho.jpg" alt="Vietnamese Food"></a>
+            <p>Popular dishes include Pho and Banh Mi.</p>
+        </div>
+        
+        <div class="cuisine-box">
+            <h2>Malaysian Cuisine</h2>
+            <a href="/html/sea_cusine/malaysian/malaysian_cuisine.html">
+            <img src="/assets/malay.jpeg" alt="Malaysian Food"></a>
+            <p>Popular dishes include Nasi Lemak and Satay.</p>
+        </div>
+        
+        <div class="cuisine-box">
+            <h2>Indonesian Cuisine</h2>
+            <a href="/html/sea_cusine/indonesian/indonesian_cuisine.html">
+            <img src="/assets/indio.jpeg" alt="Indonesian Food"></a>
+            <p>Popular dishes include Rendang and Nasi Goreng.</p>
+        </div>
+        
+        <div class="cuisine-box">
+            <h2>Filipino Cuisine</h2>
+            <a href="/html/sea_cusine/filipino/filipino_cuisine.html">
+            <img src="/assets/fili.jpeg" alt="Filipino Food"></a>
+            <p>Popular dishes include Adobo, Sinigang, and Lechon.</p>
+        </div>
+        
+        <div class="cuisine-box">
+            <h2>Singaporean Cuisine</h2>
+            <a href="/html/sea_cusine/singaporean/singaporean_cuisine.html">
+            <img src="/assets/singa.jpeg" alt="Singaporean Food"></a>
+            <p>Popular dishes include Hainanese Chicken Rice, Chilli Crab, and Laksa.</p>
+        </div>
+    </div>
+
+    <center>
+        <button onclick="window.location.href='/html/mainPages/home.html'" 
+                style="background-color: #ff7369; color: white; font-size: 16px; 
+                       font-family: Arial, sans-serif; padding: 10px 20px; 
+                       border: none; border-radius: 12px; cursor: pointer; 
+                       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.2s;">
+            Home Page
+        </button>
+        
+        
+        <footer>
+            <hr>
+                <div id="tm">@2025, All Rights Reserved &#8482 </div>
+        </footer>
+        </center>
+
+    <script>
+        function unlockPage() {
+            document.getElementById("paymentOverlay").style.display = "none"; 
+            document.getElementById("mainContent").style.filter = "none"; 
+        }
+    </script>
+
+</body>
+</html>
+
+

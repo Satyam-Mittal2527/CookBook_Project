@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background-color: #f5f5dc; /* Beige */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Team Member Styling */
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+.values-box {
+    /* background-color: rgba(255, 250, 250, 0.8); Pastel green with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    transform: scale(1.05);
+}
+
+.float-box {
+    width: 800px; /* Adjust width as needed */
+    margin: 10px; /* Add margin for spacing */
+    padding: 10px; /* Add padding for content */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border: 3px solid #f49797; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transform: scale(1.05);
+}
+
+
+/* Button Styling */
+.learn-more {
+    background-color: #ff9999; /* Light red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #ff6666; /* Darker light red on hover */
+}
+
+/* Additional Button Styling */
+.values-box button {
+    background-color: #fb98af; /* Pastel green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.values-box button:hover {
+    background-color: #e0c5b2; /* Lighter pastel green on hover */
+}
+
+.brekage {
+    margin: 40px auto;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(238, 68, 96), transparent);
+    border: none;
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Fried Cutlets!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>500 grams ground meat (chicken, beef, lamb, or your choice)</li>
+        <li>1 onion, finely chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 inch ginger, minced</li>
+        <li>1 green chili, finely chopped (optional)</li>
+        <li>1 teaspoon garam masala</li>
+        <li>1 teaspoon coriander powder</li>
+        <li>1/2 teaspoon cumin powder</li>
+        <li>Salt and pepper to taste</li>
+        <li>1 egg, beaten</li>
+        <li>1/2 cup bread crumbs</li>
+        <li>Oil for frying</li>
+        <li>Fresh cilantro for garnish</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">In a large bowl, combine the ground meat, finely chopped onion, minced garlic, minced ginger, and green chili (if using).</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">Add garam masala, coriander powder, cumin powder, salt, and pepper. Mix well.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Form the mixture into small patties or cutlets.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Dip each cutlet into the beaten egg, then coat with bread crumbs.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Heat oil in a large frying pan over medium heat.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Fry the cutlets in batches until they are golden brown and cooked through, about 3-4 minutes per side.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Remove the cutlets from the pan and drain on paper towels.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-content">Garnish with fresh cilantro and serve hot.</div>
+        </div>
+    </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

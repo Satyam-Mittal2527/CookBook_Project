@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+</head>
+
+<body>
+    <h1>Juju Dhau Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Juju Dhau:</strong>
+            <br><br>
+            <li>1 litre whole milk</li>
+            <li>1/2 cup yogurt (as a starter)</li>
+            <li>1/4 cup sugar (optional, for sweetness)</li>
+            <li>1/2 tsp ground cardamom (optional, for flavor)</li>
+            <li>A few strands of saffron (optional, for flavor and color)</li>
+            <li>Clay or earthenware pots (for traditional setting)</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Milk:</strong>
+            <br><br>
+            <li> In a large pot, bring the whole milk to a boil.</li>
+            <li> Reduce the heat and let the milk simmer for about 10-15 minutes, stirring occasionally to prevent it from sticking to the bottom of the pot.</li>
+            <li> Add sugar, ground cardamom, and saffron (if using) to the milk. Mix well and continue to simmer for another 5 minutes.</li>
+            <li> Remove the pot from the heat and let the milk cool to a lukewarm temperature (about 110°F or 43°C).</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Yogurt Mixture:</strong>
+            <br><br>
+            <li> In a small bowl, mix the yogurt starter with a little lukewarm milk to make a smooth mixture.</li>
+            <li> Add the yogurt mixture to the lukewarm milk and mix well.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Set the Yogurt:</strong>
+            <br><br>
+            <li> Pour the mixture into clay or earthenware pots for a traditional setting. If you don't have clay pots, you can use any clean container.</li>
+            <li> Cover the pots with a cloth or lid and place them in a warm, undisturbed area for about 6-8 hours or until the yogurt is set and firm.</li>
+        </ol>
+        <br>
+      
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

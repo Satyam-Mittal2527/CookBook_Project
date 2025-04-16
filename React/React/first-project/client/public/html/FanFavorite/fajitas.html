@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Fajitas Fiesta!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>2 chicken breasts, sliced into strips</li>
+        <li>1 red bell pepper, sliced</li>
+        <li>1 green bell pepper, sliced</li>
+        <li>1 yellow bell pepper, sliced</li>
+        <li>1 onion, sliced</li>
+        <li>2 tablespoons olive oil</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 teaspoon chili powder</li>
+        <li>1 teaspoon cumin powder</li>
+        <li>1 teaspoon paprika</li>
+        <li>1/2 teaspoon oregano</li>
+        <li>1/2 teaspoon black pepper</li>
+        <li>Salt to taste</li>
+        <li>Flour tortillas</li>
+        <li>Fresh cilantro for garnish</li>
+        <li>Sour cream, guacamole, and salsa for serving</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Slice the chicken breasts, bell peppers, and onion.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">Heat olive oil in a large skillet over medium-high heat.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Add the sliced chicken strips and cook until browned and cooked through.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Remove the chicken from the skillet and set aside.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">In the same skillet, add the sliced bell peppers and onion.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Cook the vegetables until they are tender and slightly charred.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Add the minced garlic and sauté for another minute.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-content">Return the cooked chicken strips to the skillet.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">9</div>
+            <div class="step-content">Add the chili powder, cumin powder, paprika, oregano, black pepper, and salt. Stir well to combine.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">10</div>
+            <div class="step-content">Cook for another 2-3 minutes, ensuring the chicken and vegetables are well coated with the spices.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">11</div>
+            <div class="step-content">Warm the flour tortillas in a dry skillet or microwave.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">12</div>
+            <div class="step-content">Serve the fajita mixture on the warm tortillas.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">13</div>
+            <div class="step-content">Garnish with fresh cilantro.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">14</div>
+            <div class="step-content">Serve with sour cream, guacamole, and salsa.</div>
+        </div>
+    </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+    
+</body>

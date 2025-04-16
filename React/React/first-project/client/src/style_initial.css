@@ -1,0 +1,81 @@
+* {
+    background-image: url("../src/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logo {
+    width: 250px !important;
+    position: fixed;
+    top: 50px;
+    left: 60px;
+    background-image: none;
+    background-color: transparent;
+}
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: none;
+    background-color: transparent;
+}
+
+.continue {
+    font-family: cursive;
+    font-size: 20px;
+    background-image: none;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    background-image: none;
+    background-color: transparent;
+    background: linear-gradient(45deg, #ff6b6b, #ff9999); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    padding: 15px 30px; /* Increased padding */
+    font-size: 18px; /* Larger font size */
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s; /* Transition effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Box shadow */
+    height: 60px; /* Increased height */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+.initial-container {
+    max-width: 50vw; /* Prevent text from going outside the window */
+    white-space: normal; /* Allow text to wrap */
+    word-wrap: break-word; /* Ensure long words break properly */
+    overflow: hidden;
+    background-image: none;
+    background-color: transparent;
+}
+
+.typewriter{
+    margin-top: 200px;
+    font-size: 24px;
+    margin-right: 100px;
+    font-weight: bold;
+    border-right: 2px solid black; /* Cursor effect */
+    padding-right: 5px;
+    display: inline-block;
+    background-image: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 30px;
+}
+.continue:hover {
+    background-color: #A1E3F9;
+}
+.continue:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background: linear-gradient(45deg, #ff9999, #ff6b6b); /* Reverse gradient on hover */
+}
+.continue::after {
+    content: ' ➔'; /* Arrow after the text */
+    font-size: 20px; /* Arrow size */
+}
+

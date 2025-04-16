@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Hour Countdown Timer</title>
+    <style>
+        .countdown-timer {
+            font-size: 30px;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .countdown-digits {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="countdown-timer">
+        <div> &nbsp;&nbsp;&nbsp;
+        <span class="countdown-digits" id="hours">02</span>:
+        <span class="countdown-digits" id="minutes">00</span>:
+        <span class="countdown-digits" id="seconds">00</span>
+        </div>
+    </div>
+
+    <script>
+        function startCountdown() {
+            // Set the target time (1 hour)
+            let targetTime = new Date().getTime() + 1 * 60 * 60 * 1000; // 1 hour from now
+
+            // Update the countdown every second
+            let interval = setInterval(function() {
+                // Get the current time
+                let now = new Date().getTime();
+                
+                // Calculate the remaining time
+                let remainingTime = targetTime - now;
+
+                // Calculate hours, minutes, and seconds
+                let hours = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
+                let minutes = Math.floor((remainingTime / (1000 * 60)) % 60);
+                let seconds = Math.floor((remainingTime / 1000) % 60);
+
+                // Display the countdown
+                document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+                document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+
+                // If time is up, stop the countdown
+                if (remainingTime <= 0) {
+                    clearInterval(interval);
+                    document.getElementById("hours").innerText = "00";
+                    document.getElementById("minutes").innerText = "00";
+                    document.getElementById("seconds").innerText = "00";
+                    alert("Time's up!");
+                }
+            }, 1000);
+        }
+
+        // Start the countdown as soon as the page loads
+        window.onload = startCountdown;
+    </script>
+
+</body>
+</html>

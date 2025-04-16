@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Burger Recipe!</h1></center>
+        <h1>Ingredients:</h1>
+        <ul class="fancy-arrow-list list">
+            <li>500 grams ground meat (your choice: beef, chicken, turkey, or veggie)</li>
+            <li>1 egg (optional, for binding)</li>
+            <li>1/4 cup breadcrumbs (optional, for binding)</li>
+            <li>1 teaspoon salt</li>
+            <li>1/2 teaspoon black pepper</li>
+            <li>1 teaspoon garlic powder</li>
+            <li>1 teaspoon onion powder</li>
+            <li>4 burger buns</li>
+            <li>Lettuce, tomato, onion, pickles (optional toppings)</li>
+            <li>Cheese slices (optional)</li>
+            <li>Ketchup, mustard, mayo (optional condiments)</li>
+        </ul>
+
+        <center><h1>Instructions:</h1></center>
+        <p></p>
+            
+        <div class="step-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Prepare the Meat: In a large bowl, combine the ground meat, salt, black pepper, garlic powder, and onion powder. If using, add the egg and breadcrumbs for binding.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Form the Patties: Divide the meat mixture into 4 equal portions and shape each portion into a patty. Make a small indentation in the center of each patty to prevent it from puffing up during cooking.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">Preheat the Grill or Pan: Preheat your grill to medium-high heat or heat a skillet over medium-high heat.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Cook the Patties: Place the patties on the grill or skillet and cook for about 4-5 minutes per side, or until the internal temperature reaches 160°F (71°C) for beef, 165°F (74°C) for chicken or turkey, or according to your preference for veggie patties.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Toast the Buns: While the patties are cooking, toast the burger buns on the grill or in a toaster.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">Assemble the Burgers: Place a cooked patty on the bottom half of each bun. Add cheese slices if desired. Top with lettuce, tomato, onion, pickles, and condiments of your choice. Cover with the top half of the bun.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-content">Serve and Enjoy: Serve the burgers with your favorite side dishes, such as fries or a salad. Enjoy your delicious homemade burgers!</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

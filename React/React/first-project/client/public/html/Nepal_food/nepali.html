@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Nepali Dishes</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color:aliceblue;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 30px;
+            background-image: url(/public/assets/nepalbg.png);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 90px;
+            text-decoration: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-decoration: underline;
+        }
+
+        .dishes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Ensure three items per row */
+            gap: 20px;
+        }
+
+        .dish {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            background-color: #fff;
+            border: 3.5px solid #0b3b5d;
+        }
+
+        .dish:hover {
+            transform: scale(1.05);
+        }
+
+        .dish img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .label-container {
+            position: absolute;
+            bottom: 50px; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color:black;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .label-containe {
+            position: absolute;
+            bottom: 60px; 
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .brekage {
+  margin: 40px auto;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgb(238, 68, 96), transparent);
+  border: none;
+}
+        </style>
+</head>
+<body>
+    <h1 class="header">Flavours of the Himalayas!</h1>
+    <div class="brekage"></div>
+    <div class="container">
+
+        <div class="dishes">
+            <div class="dish">
+                <a href="dal_bhat.html"><img src="/assets/Dal_Bhat_Tarkari.jpg" alt="Nepali Thakali"></a>
+                <div class="label-container">Nepali Thakali</div>
+                <div class="dish-description"><h1>     </h1>&nbspA traditional Nepali meal consisting of rice, lentil &nbspsoup, vegetable curry, and pickles.</div>
+            </div>
+            <div class="dish">
+                <a href="selroti.html"><img src="/assets/Sel_Roti.jpg" alt="Sel Roti"></a>
+                <div class="label-container">Sel Roti</div>
+                <div class="dish-description"><h1>     </h1>&nbspA traditional homemade, sweet, ring-shaped rice &nbspbread/doughnut.</div>
+            </div>
+            <div class="dish">
+                <a href="yomari.html"><img src="/assets/Yomari.jpg" alt="Yomari"></a>
+                <div class="label-container">Yomari</div>
+                <div class="dish-description"><h1>     </h1>&nbspA steamed dumpling made of rice flour and filled with &nbspsweet substances like molasses or sesame seeds.</div>
+            </div>
+            <div class="dish">
+                <a href="dhido.html"><img src="/assets/Dhido.jpg" alt="Dhido"></a>
+                <div class="label-container">Dhido</div>
+                <div class="dish-description"><h1>     </h1>&nbspA traditional Nepali food made from buckwheat or &nbspmillet flour, served with various side dishes.</div>
+            </div>
+            <div class="dish">
+                <a href="gorkhali_lamb.html"><img src="/assets/Gorkhali_Lamb.jpg" alt="Gorkhali Lamb"></a>
+                <div class="label-container">Gorkhali Lamb</div>
+                <div class="dish-description"><h1>     </h1>&nbspA spicy lamb curry with vegetables and spices.</div>
+            </div>
+            <div class="dish">
+                <a href="juju_dhau.html"><img src="/assets/Juju_Dhau.jpg" alt="Juju Dhau"></a>
+                <div class="label-container">Juju Dhau</div>
+                <div class="dish-description"><h1>     </h1>&nbspA special type of yogurt from Bhaktapur, known for its &nbsp&nbsprich and creamy texture.</div>
+            </div>
+            <div class="dish">
+                <a href="chatamari.html"><img src="/assets/Chatamari.jpg" alt="Chatamari"></a>
+                <div class="label-container">Chatamari</div>
+                <div class="dish-description"><h1>     </h1>&nbspA kind of Nepali pizza made from rice flour and topped &nbspwith minced meat, eggs, and vegetables.</div>
+            </div>
+            <div class="dish">
+                <a href="chicken_choila.html"><img src="/assets/Chicken_Choila.jpg" alt="Chicken Choila"></a>
+                <div class="label-container">Chicken Choila</div>
+                <div class="dish-description"><h1>     </h1>&nbspA spicy grilled chicken salad mixed with spices and &nbspherbs.</div>
+            </div>
+            <div class="dish">
+                <a href="momo.html"><img src="/assets/Momo.jpg" alt="Momo"></a>
+                <div class="label-container">Momo</div>
+                <div class="dish-description"><h1>     </h1>&nbspNepali dumplings filled with meat or vegetables, &nbspserved with a spicy dipping sauce.</div>
+            </div>
+            <div class="dish">
+                <a href="thukpa.html"><img src="/assets/Thukpa.jpg" alt="Thukpa"></a>
+                <div class="label-container">Thukpa</div>
+                <div class="dish-description"><h1>     </h1>&nbspA noodle soup with meat, vegetables, and spices.</div>
+            </div>
+            <div class="dish">
+                <a href="kheer.html"><img src="/assets/Kheer.jpg" alt="Kheer"></a>
+                <div class="label-container">Kheer</div>
+                <div class="dish-description"><h1>     </h1>&nbspA rice pudding made with milk, sugar, and spices.</div>
+            </div>
+            <div class="dish">
+                <a href="sukuti.html"><img src="/assets/Sukuti.jpg" alt="Sukuti"></a>
+                <div class="label-container">Sukuti</div>
+                <div class="dish-description"><h1>     </h1>&nbspDried meat seasoned with spices, often served as a &nbspsnack or appetizer.</div>
+            </div>
+            <div class="dish">
+                <a href="aloo_tama.html"><img src="/assets/Aloo_Tama.jpg" alt="Aloo Tama"></a>
+                <div class="label-container">Aloo Tama</div>
+                <div class="dish-description"><h1>     </h1>&nbspA curry made with potatoes and bamboo shoots, &nbspseasoned with spices.</div>
+            </div>
+            <div class="dish">
+                <a href="kwati.html"><img src="/assets/Kwati.jpg" alt="Kwati"></a>
+                <div class="label-container">Kwati</div>
+                <div class="dish-description"><h1>     </h1>&nbspA mixed bean soup, traditionally consumed during the &nbspfestival of Janai Purnima.</div>
+            </div>
+            <div class="dish">
+                <a href="ghonghi.html"><img src="/assets/Ghonghi.jpg" alt="Ghonghi"></a>
+                <div class="label-container">Ghonghi</div>
+                <div class="dish-description"><h1>     </h1>&nbspRiver snails cooked with spices, a delicacy in certain &nbspregions of Nepal.</div>
+            </div>
+            <div class="dish">
+                <a href="sikarni.html"><img src="/assets/Sikarni.jpg" alt="Sikarni"></a>
+                <div class="label-containe">Sikarni</div>
+                <div class="dish-description"><h1>     </h1>&nbspA sweet yogurt dessert, flavored with spices like &nbspcardamom and saffron.</div>
+            </div>
+            <div class="dish">
+                <a href="bhuttan.html"><img src="/assets/bhuttan.jpg" alt="Nepali Bhuttan"></a>
+                <div class="label-containe">Nepali Bhuttan</div>
+                <div class="dish-description"><h1>     </h1>&nbspFried goat intestines, a popular snack or appetizer.</div>
+            </div>
+            <div class="dish">
+                <a href="chhang.html"><img src="/assets/chhang.jpg" alt="Chhaang"></a>
+                <div class="label-containe">Chhaang</div>
+                <div class="dish-description"><h1>     </h1>&nbspA traditional fermented rice or barley beverage &nbsppopular in the Himalayas, symbolizing hospitality and &nbspcommunity.</div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <button onclick="window.location.href='/html/mainPages/home.html'" 
+                style="background-color: #ff7369; color: white; font-size: 16px; 
+                       font-family: Arial, sans-serif; padding: 10px 20px; 
+                       border: none; border-radius: 12px; cursor: pointer; 
+                       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.2s;">
+            Home Page
+        </button>
+        
+        
+        <footer>
+            <hr>
+                <div id="tm">@2025, All Rights Reserved &#8482 </div>
+        </footer>
+        </center>
+</body>
+</html>

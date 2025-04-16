@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Chocolate Waffles!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>2 cups all-purpose flour</li>
+        <li>1/4 cup cocoa powder</li>
+        <li>1/4 cup granulated sugar</li>
+        <li>2 teaspoons baking powder</li>
+        <li>1/2 teaspoon baking soda</li>
+        <li>1/4 teaspoon salt</li>
+        <li>2 large eggs</li>
+        <li>1 3/4 cups milk</li>
+        <li>1/2 cup unsalted butter, melted</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>1/2 cup chocolate chips (optional)</li>
+        <li>Whipped cream and fresh berries for serving</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Preheat your waffle iron according to the manufacturer's instructions.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">In a large mixing bowl, whisk together the all-purpose flour, cocoa powder, granulated sugar, baking powder, baking soda, and salt.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">In a separate bowl, beat the eggs and then add the milk, melted butter, and vanilla extract. Mix well.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Pour the wet ingredients into the dry ingredients and stir until just combined. If using, fold in the chocolate chips.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Lightly grease the waffle iron with non-stick cooking spray or a small amount of melted butter.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Pour the batter onto the preheated waffle iron, spreading it out evenly. Close the waffle iron and cook until the waffles are crispy and cooked through, about 3-5 minutes depending on your waffle iron.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Carefully remove the waffles and repeat with the remaining batter.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-content">Serve the chocolate waffles warm, topped with whipped cream and fresh berries.</div>
+        </div>
+    </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

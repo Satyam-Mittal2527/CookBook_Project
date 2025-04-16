@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>South Indian Cuisine</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white; /* Lighter background color for the page */
+        color: #333;
+        text-align: center;
+      }
+      p {
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-decoration: dashed;
+        color: black;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .menu-item {
+        background-color: rgb(251, 237, 218); /* White background for each item */
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 25%;
+        text-align: center;
+        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+      }
+
+      .menu-item:hover {
+        transform: translateY(-5px); /* Lift the item slightly on hover */
+        box-shadow: 0 4px 15px rgba(255, 87, 34, 0.7),
+          0 0 20px rgba(63, 81, 181, 0.7), 0 0 25px rgba(0, 188, 212, 0.7); /* Colorful drop-shadow */
+      }
+
+      .menu-item img {
+        border: 2px solid black;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        color: #ff5722;
+      }
+
+      .ingredients {
+        color: #2196f3;
+        font-style: italic;
+      }
+
+      .steps {
+        color: #555;
+        font-size: 0.9em;
+        margin-top: 10px;
+        text-align: left;
+      }
+      .brekage {
+  margin: 10px auto;
+  width: 80%;
+  height: 0.1px;
+  background: linear-gradient(to right, transparent, rgb(207, 161, 121), transparent);
+  border: none;
+}
+.animation {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.scooter {
+    position: absolute;
+    bottom: 0;
+    left: -200px; /* Start off-screen */
+    width: 150px; /* Adjust size of Anna and scooter */
+    animation: moveScooter 5s linear infinite;
+}
+
+/* Keyframes for moving scooter */
+@keyframes moveScooter {
+    0% {
+        left: -200px; /* Start off-screen on the left */
+    }
+    50% {
+        transform: rotate(10deg); /* Adds a tilt for fun */
+    }
+    100% {
+        left: 100%; /* End off-screen on the right */
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>🥥🌴South Indian Cuisine🌴🥥</h1>
+    <br>
+    <div class="animation brekage">
+      <!-- Anna on a scooter -->
+      <img src="/assets/scooter_anna.png" alt="Anna on a scooter" class="scooter">
+  </div>
+
+    <div class="container">
+      <div class="menu-item">
+        <h3>Puttu</h3>
+        <img src="/assets/puttu.jpg" alt="Puttu" />
+        <p>A steamed rice cake layered with coconut.</p>
+        <p class="ingredients">
+          Ingredients: Rice flour, Grated coconut, Water, Salt.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Take rice flour in a bowl and add a pinch of salt.</li>
+            <li>
+              Sprinkle water gradually and mix until the flour turns moist and
+              crumbly.
+            </li>
+            <li>
+              Layer a puttu maker with alternating layers of grated coconut and
+              moistened rice flour.
+            </li>
+            <li>Steam for 8-10 minutes until cooked through.</li>
+            <li>Serve hot with banana, sugar, or kadala curry.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Pongal</h3>
+        <img src="/assets/pongal.jpg" alt="Pongal" />
+        <p>A savory rice and lentil dish.</p>
+        <p class="ingredients">
+          Ingredients: Rice, Moong dal, Ghee, Black pepper, Cashews.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Dry roast the moong dal for a few minutes until aromatic.</li>
+            <li>
+              Wash and cook the rice and dal together with water in a pressure
+              cooker for 3-4 whistles.
+            </li>
+            <li>
+              In a pan, heat ghee and fry cumin seeds, black pepper, and
+              cashews.
+            </li>
+            <li>Mix the tempering into the cooked rice and dal mixture.</li>
+            <li>Serve hot with coconut chutney or sambar.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Upma</h3>
+        <img src="/assets/upma.jpg" alt="Upma" />
+        <p>A savory dish made with roasted semolina and vegetables.</p>
+        <p class="ingredients">
+          Ingredients: Semolina, Mustard seeds, Green chilies, Vegetables.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Dry roast semolina until lightly golden and set aside.</li>
+            <li>
+              Heat oil in a pan and add mustard seeds, urad dal, and curry
+              leaves.
+            </li>
+            <li>Sauté onions and chilies until soft.</li>
+            <li>Add water and bring it to a boil.</li>
+            <li>
+              Slowly add semolina while stirring continuously to avoid lumps.
+            </li>
+            <li>Cook until water is absorbed and upma turns soft.</li>
+            <li>Serve hot with coconut chutney or pickle.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Payasam</h3>
+        <img src="/assets/payasam.jpg" alt="Payasam" />
+        <p>A sweet pudding made with milk, rice, and jaggery.</p>
+        <p class="ingredients">
+          Ingredients: Milk, Rice, Jaggery, Cardamom, Cashews.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Boil the milk in a pan.</li>
+            <li>Add rice and cook until the rice becomes soft.</li>
+            <li>Stir in jaggery, cardamom, and cashews.</li>
+            <li>Let it simmer for a few minutes until it thickens.</li>
+            <li>Serve warm or chilled.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Paniyaram</h3>
+        <img src="/assets/paniyaram.jpg" alt="Paniyaram" />
+        <p>
+          A crispy and soft snack made from fermented rice and lentil batter.
+        </p>
+        <p class="ingredients">
+          Ingredients: Rice, Urad dal, Green chilies, Curry leaves.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>
+              Soak rice and urad dal overnight and grind into a smooth batter.
+            </li>
+            <li>Ferment the batter for 8-10 hours.</li>
+            <li>Heat a paniyaram pan, add a little oil in each cavity.</li>
+            <li>
+              Pour the batter into the pan and cook until golden brown on both
+              sides.
+            </li>
+            <li>Serve hot with chutney or sambar.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Kuttu</h3>
+        <img src="/assets/kootu.jpg" alt="Kuttu" />
+        <p>A nutritious dish made with vegetables and lentils.</p>
+        <p class="ingredients">
+          Ingredients: Mixed vegetables, Chana dal, Coconut, Spices.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Soak chana dal for 2-3 hours and cook until soft.</li>
+            <li>Chop vegetables and cook them with spices in a pan.</li>
+            <li>Mix the cooked dal and vegetables, then add grated coconut.</li>
+            <li>Stir well and cook for 5 more minutes.</li>
+            <li>Serve hot with chapati or rice.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <h3>Chettinad Chicken</h3>
+        <img
+          src="/assets/chettinad_chicken_curry.jpg"
+          alt="Chettinad Chicken"
+        />
+        <p>A spicy and flavorful chicken dish from Chettinad cuisine.</p>
+        <p class="ingredients">
+          Ingredients: Chicken, Coconut, Black pepper, Spices.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Grind coconut, black pepper, and spices into a fine paste.</li>
+            <li>Fry onions, ginger, garlic, and tomatoes in oil.</li>
+            <li>Add the chicken pieces and cook until browned.</li>
+            <li>
+              Mix in the ground paste, water, and cook until chicken is tender.
+            </li>
+            <li>Serve hot with rice or paratha.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Coconut Chutney</h3>
+        <img src="/assets/coconut_chutney.jpg" alt="Coconut Chutney" />
+        <p>A tangy and spicy chutney made from fresh coconut.</p>
+        <p class="ingredients">
+          Ingredients: Grated coconut, Green chilies, Ginger, Mustard seeds,
+          Curry leaves.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>
+              In a blender, combine grated coconut, green chilies, ginger, and a
+              little water to form a smooth paste.
+            </li>
+            <li>
+              In a small pan, heat oil and add mustard seeds, curry leaves, and
+              dry red chilies. Let them splutter.
+            </li>
+            <li>Pour the tempering over the chutney and mix well.</li>
+            <li>Serve with idli, dosa, or any other South Indian dish.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <h3>Hyderabadi Biryani</h3>
+        <img src="/assets/hyderabadi_biryani.jpg" alt="Hyderabadi Biryani" />
+        <p>A rich and aromatic biryani from Hyderabad.</p>
+        <p class="ingredients">
+          Ingredients: Basmati rice, Meat, Saffron, Spices.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Marinate meat with yogurt, spices, and saffron.</li>
+            <li>Cook rice separately until 70% done.</li>
+            <li>
+              Layer the marinated meat and partially cooked rice in a pot and
+              seal it.
+            </li>
+            <li>
+              Cook on low heat for 20-25 minutes to let the flavors blend.
+            </li>
+            <li>Serve hot with raita or salad.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Avial</h3>
+        <img src="/assets/avial.jpg" alt="Avial" />
+        <p>A mixed vegetable dish with coconut and yogurt.</p>
+        <p class="ingredients">
+          Ingredients: Mixed vegetables, Coconut, Yogurt, Curry leaves.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>Boil the mixed vegetables until tender but firm.</li>
+            <li>Grind coconut and green chilies into a smooth paste.</li>
+            <li>
+              Mix the coconut paste with yogurt and add it to the boiled
+              vegetables.
+            </li>
+            <li>Cook for a few minutes and add curry leaves for flavor.</li>
+            <li>Serve hot with rice or roti.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Appam</h3>
+        <img src="/assets/appam.jpg" alt="Appam" />
+        <p>Soft, lacy rice pancakes often paired with coconut milk or stew.</p>
+        <p class="ingredients">
+          Ingredients: Rice, Coconut milk, Yeast, Sugar.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>
+              Soak rice overnight and grind with coconut milk into a smooth
+              batter.
+            </li>
+            <li>Ferment the batter for 6-8 hours.</li>
+            <li>
+              Heat a non-stick pan and pour a ladle of batter, swirl to form a
+              lacy edge.
+            </li>
+            <li>Cook until the center is soft and the edges are crispy.</li>
+            <li>Serve hot with stew or coconut milk.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h3>Filter Coffee</h3>
+        <img src="/assets/filter_coffee.jpg" alt="Filter Coffee" />
+        <p>A traditional South Indian coffee made with a metal filter.</p>
+        <p class="ingredients">
+          Ingredients: Coffee powder, Hot water, Boiled milk, Sugar.
+        </p>
+        <div class="steps">
+          <h4>Steps:</h4>
+          <ol>
+            <li>
+              Place coffee powder in the top compartment of a South Indian
+              filter.
+            </li>
+            <li>
+              Pour hot water over the coffee powder and let it drip through into
+              the bottom compartment.
+            </li>
+            <li>Boil milk and mix it with the brewed coffee in a cup.</li>
+            <li>Add sugar to taste and stir well.</li>
+            <li>Serve hot in a traditional tumbler or davara.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <button onclick="window.location.href='/html/mainPages/home.html'" 
+              style="background-color: #ff7369; color: white; font-size: 16px; 
+                     font-family: Arial, sans-serif; padding: 10px 20px; 
+                     border: none; border-radius: 12px; cursor: pointer; 
+                     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.2s;">
+          Home Page
+      </button>
+      
+      
+      <footer>
+          <hr>
+              <div id="tm">@2025, All Rights Reserved &#8482 </div>
+      </footer>
+      </center>
+  </body>
+</html>

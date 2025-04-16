@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Chicken Nuggets Recipe!</h1></center>
+        <h1>Ingredients:</h1>
+        <ul class="fancy-arrow-list list">
+            <li>2 boneless, skinless chicken breasts (cut into bite-sized pieces)</li>
+            <li>1 cup all-purpose flour</li>
+            <li>2 large eggs (beaten)</li>
+            <li>1 cup breadcrumbs (plain or seasoned)</li>
+            <li>1 teaspoon salt</li>
+            <li>1/2 teaspoon black pepper</li>
+            <li>1 teaspoon garlic powder</li>
+            <li>1 teaspoon onion powder</li>
+            <li>Oil for frying (vegetable, canola, or your choice)</li>
+            <li>Your favorite dipping sauces</li>
+        </ul>
+
+        <center><h1>Instructions:</h1></center>
+        <p></p>
+            
+        <div class="step-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Prepare the Breading Stations: Set up three bowls. In the first bowl, place the flour. In the second bowl, beat the eggs. In the third bowl, combine the breadcrumbs, salt, black pepper, garlic powder, and onion powder.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Coat the Chicken: Dredge each chicken piece in the flour, shaking off any excess. Dip it in the beaten eggs, then coat it with the breadcrumb mixture. Make sure each piece is well-coated.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">Heat the Oil: In a large skillet or deep fryer, heat oil over medium-high heat. You need enough oil to submerge the chicken pieces.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Fry the Nuggets: Carefully place the breaded chicken pieces into the hot oil. Fry in batches to avoid overcrowding the pan. Cook each batch for about 3-4 minutes per side, or until the nuggets are golden brown and cooked through.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Drain and Serve: Use a slotted spoon to remove the chicken nuggets from the oil. Place them on a plate lined with paper towels to drain any excess oil. Serve hot with your favorite dipping sauces.</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

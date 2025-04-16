@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Cheese Pizza Recipe!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>2 1/2 cups all-purpose flour</li>
+        <li>1 teaspoon sugar</li>
+        <li>1 teaspoon salt</li>
+        <li>1 tablespoon active dry yeast</li>
+        <li>1 cup warm water (about 110°F/45°C)</li>
+        <li>2 tablespoons olive oil</li>
+        <li>1 cup pizza sauce (store-bought or homemade)</li>
+        <li>2 cups shredded mozzarella cheese</li>
+        <li>Optional: herbs like oregano, basil, or red pepper flakes for seasoning</li>
+    </ul>
+
+        <center><h1>Instructions:</h1></center>
+        <p></p>
+            
+        <div class="step-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Prepare the Dough: In a large mixing bowl, combine the warm water, sugar, and active dry yeast. Let it sit for about 5 minutes until it becomes frothy.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Add the flour, salt, and olive oil to the yeast mixture. Mix until a dough forms.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">Knead the dough on a lightly floured surface for about 5-7 minutes until it becomes smooth and elastic.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Place the dough in a greased bowl, cover it with a clean cloth, and let it rise in a warm place for about 1-2 hours until it doubles in size.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Preheat the Oven: Preheat your oven to 475°F (245°C). If you have a pizza stone, place it in the oven to heat up as well.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">Shape the Dough: Once the dough has risen, punch it down to release any air bubbles.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-content">Roll out the dough on a floured surface to your desired thickness. Transfer the rolled-out dough to a pizza peel or a baking sheet lined with parchment paper.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">8</div>
+                <div class="step-content">Add the Toppings: Spread the pizza sauce evenly over the dough, leaving a small border around the edges.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">9</div>
+                <div class="step-content">Sprinkle the shredded mozzarella cheese evenly over the sauce. If desired, add any additional herbs or seasoning on top.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">10</div>
+                <div class="step-content">Bake the Pizza: Carefully transfer the pizza to the preheated oven (or onto the pizza stone if using).</div>
+            </div>
+            <div class="step">
+                <div class="step-number">11</div>
+                <div class="step-content">Bake for about 10-12 minutes, or until the crust is golden brown and the cheese is bubbly and melted.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">12</div>
+                <div class="step-content">Serve and Enjoy: Remove the pizza from the oven and let it cool for a minute before slicing. Serve and enjoy your delicious homemade cheese pizza!</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

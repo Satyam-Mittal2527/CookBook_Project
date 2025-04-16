@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+</head>
+
+<body>
+    <h1>Kheer Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Nepali Kheer:</strong>
+            <br><br>
+            <li>1 cup rice (preferably short-grain or Basmati)</li>
+            <li>1 liter whole milk</li>
+            <li>1/2 cup sugar (adjust to taste)</li>
+            <li>1/4 cup grated coconut (optional, for flavor)</li>
+            <li>1/4 cup chopped nuts (almonds, cashews, pistachios)</li>
+            <li>1/4 cup raisins</li>
+            <li>1/2 tsp ground cardamom</li>
+            <li>1/4 tsp saffron strands (optional, for color)</li>
+            <li>2 tbsp ghee or clarified butter</li>
+            <li>A pinch of salt</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Rice:</strong>
+            <br><br>
+            <li> Rinse the rice thoroughly under cold water and drain.</li>
+            <li> In a large pot, heat the ghee or clarified butter over medium heat.</li>
+            <li> Add the rinsed rice and sauté for a few minutes until the rice is lightly toasted.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Cook the Kheer:</strong>
+            <br><br>
+            <li> Pour the milk into the pot with the toasted rice and bring it to a boil.</li>
+            <li> Reduce the heat and let it simmer, stirring occasionally to prevent the rice from sticking to the bottom.</li>
+            <li> Add the sugar, grated coconut (if using), and a pinch of salt. Mix well.</li>
+            <li> Continue to simmer the kheer for about 30-40 minutes or until the rice is fully cooked and the mixture thickens to a creamy consistency.</li>
+            <li> Stir in the chopped nuts, raisins, ground cardamom, and saffron strands (if using). Mix well and cook for an additional 5 minutes.</li>
+        </ol>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

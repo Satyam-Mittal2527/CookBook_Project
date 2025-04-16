@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ff6b6b;
+        }
+        
+        .developers-grid {
+            display: grid;
+            /* grid-template-columns: repeat(); */
+            grid-template-rows: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .developer-card {
+            background-color: #2d2d2d;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px ;
+            transition: transform 0.3s ease;
+        }
+        
+        .developer-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .developer-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .developer-name {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #ff6b6b;
+        }
+        
+        .developer-role {
+            text-align: center;
+            color: #a8a8a8;
+            margin-bottom: 15px;
+        }
+        
+        .developer-skills {
+            margin-bottom: 15px;
+        }
+        
+        .developer-skills span {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 3px;
+            font-size: 0.9em;
+        }
+        
+        .developer-contact {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .developer-contact a {
+            color: #ff6b6b;
+            text-decoration: none;
+            margin: 0 5px;
+            transition: opacity 0.3s ease;
+        }
+        
+        .developer-contact a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Development Team</h1>
+    <div class="developers-grid">
+        <div class="developer-card">
+            <img src="/assets/satty.jpg" alt="Developer 1" class="developer-image">
+            <div class="developer-name">Satyam Mittal</div>
+            <div class="developer-role">Frontend Developer</div>
+            <div class="developer-skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="developer-contact">
+                <a href="#">GitHub</a> | 
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="developer-card">
+            <img src="/assets/progya.jpg" alt="Developer 2" class="developer-image">
+            <div class="developer-name">Progya Paromita Biswas</div>
+            <div class="developer-role">Backend Developer</div>
+            <div class="developer-skills">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+            </div>
+            <div class="developer-contact">
+                <a href="#">GitHub</a> | 
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="developer-card">
+            <img src="/assets/deeya.jpg" alt="Developer 3" class="developer-image">
+            <div class="developer-name">Deeya Sidgel</div>
+            <div class="developer-role">Full Stack Developer</div>
+            <div class="developer-skills">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>SQL</span>
+            </div>
+            <div class="developer-contact">
+                <a href="#">GitHub</a> | 
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="developer-card">
+            <img src="/assets/ishita.jpg" alt="Developer 4" class="developer-image">
+            <div class="developer-name">Ishita Gupta</div>
+            <div class="developer-role">UI/UX Designer</div>
+            <div class="developer-skills">
+                <span>Figma</span>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+            </div>
+            <div class="developer-contact">
+                <a href="#">GitHub</a> | 
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

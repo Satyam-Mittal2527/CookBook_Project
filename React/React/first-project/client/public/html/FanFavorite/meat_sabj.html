@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Meat Sabji!</h1></center>
+        <h1>Ingredients:</h1>
+        <ul class="fancy-arrow-list list">
+            <li>500 grams meat (chicken, mutton, or your choice), cubed</li>
+            <li>2 tablespoons vegetable oil</li>
+            <li>1 onion, finely chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 inch ginger, minced</li>
+            <li>2 tomatoes, diced</li>
+            <li>1 potato, diced</li>
+            <li>1 carrot, diced</li>
+            <li>1 green bell pepper, diced</li>
+            <li>1 teaspoon turmeric powder</li>
+            <li>1 teaspoon coriander powder</li>
+            <li>1 teaspoon cumin powder</li>
+            <li>1 teaspoon garam masala</li>
+            <li>1/2 teaspoon red chili powder (adjust to taste)</li>
+            <li>Salt to taste</li>
+            <li>Fresh cilantro for garnish</li>
+        </ul>
+        <center><h1>Instructions:</h1></center>
+        <div class="step-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Heat vegetable oil in a large pot over medium heat.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Add the finely chopped onion and sauté until golden brown.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">Stir in the minced garlic and ginger, and cook for another minute until fragrant.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Add the cubed meat to the pot and cook until it starts to brown.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Add the turmeric powder, coriander powder, cumin powder, garam masala, red chili powder, and salt. Mix well to coat the meat with the spices.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">Add the diced tomatoes, potato, carrot, and green bell pepper. Stir to combine.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-content">Cover and cook on low heat for about 30-35 minutes, or until the meat and vegetables are tender.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">8</div>
+                <div class="step-content">Adjust seasoning with salt if needed.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">9</div>
+                <div class="step-content">Garnish with fresh cilantro and serve hot with rice or roti.</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Chicken Wings!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>2 pounds chicken wings</li>
+        <li>2 tablespoons olive oil</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 teaspoon paprika</li>
+        <li>1 teaspoon onion powder</li>
+        <li>1/2 teaspoon cayenne pepper (adjust to taste)</li>
+        <li>Salt and pepper to taste</li>
+        <li>1/4 cup melted butter</li>
+        <li>1/4 cup hot sauce (your choice)</li>
+        <li>Fresh parsley for garnish</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Preheat your oven to 400°F (200°C) and line a baking sheet with aluminum foil or parchment paper.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">In a large bowl, toss the chicken wings with olive oil, minced garlic, paprika, onion powder, cayenne pepper, salt, and pepper until evenly coated.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Arrange the wings in a single layer on the prepared baking sheet.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Bake the wings in the preheated oven for 25-30 minutes, flipping them halfway through, until they are golden brown and crispy.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">While the wings are baking, melt the butter in a small saucepan over low heat and stir in the hot sauce until well combined.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Once the wings are done baking, remove them from the oven and transfer to a large mixing bowl.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Pour the butter and hot sauce mixture over the wings and toss to coat evenly.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-content">Garnish with fresh parsley and serve hot.</div>
+        </div>
+    </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

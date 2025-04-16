@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singaporean Cuisine</title>
+    <style>
+        body {
+            background-color: #f5f5dc;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('/assets/sea_background.png');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: #000000;
+            background-color: rgba(245, 189, 117, 0.8);
+            padding: 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .recipes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recipe {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .recipe:hover {
+            transform: scale(1.05);
+        }
+        .recipe img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .learn-more {
+            display: inline-block;
+            background-color: #ff9999;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .learn-more:hover {
+            background-color: #ff6666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Singaporean Cuisine</h1>
+    <div class="content">
+        <div class="recipes">
+            <div class="recipe">
+                <img src="/assets/hainanese_chicken_rice.png" alt="Hainanese Chicken Rice">
+                <h3>Hainanese Chicken Rice</h3>
+                <a href="/html/sea_cusine/singaporean/hcr.html" class="learn-more">View Recipe</a>
+            </div>
+            <div class="recipe">
+                <img src="/assets/chilli_crab.png" alt="Chilli Crab">
+                <h3>Chilli Crab</h3>
+                <a href="/html/sea_cusine/singaporean/chilli_crab.html" class="learn-more">View Recipe</a>
+            </div>
+            <div class="recipe">
+                <img src="/assets/laksa.png" alt="Laksa">
+                <h3>Laksa</h3>
+                <a href="/html/sea_cusine/singaporean/laksa.html" class="learn-more">View Recipe</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="../sea.html" class="learn-more">Back to South East Asian Cuisine</a>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Delicious Hotdog Delight!</h1></center>
+        <h1> Ingredients: </h1>
+        <ul class="fancy-arrow-list list">
+            <li>4 hotdog buns</li>
+            <li>4 hotdog sausages</li>
+            <li>1/2 cup diced onions</li>
+            <li>1/2 cup shredded cheese (cheddar or your choice)</li>
+            <li>1/4 cup relish</li>
+            <li>1/4 cup ketchup</li>
+            <li>1/4 cup mustard</li>
+            <li>Optional: sauerkraut, jalapeños, or pickles for garnish</li>
+        </ul>
+
+        <center><h1> Instructions: </h1></center>
+        <p></p>
+
+        <div class="step-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Cook the Hotdog Sausages: Grill or boil the sausages until fully cooked.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Prepare the Buns: Toast the hotdog buns on the grill or in a toaster until lightly browned.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">Assemble the Hotdogs: Place a cooked sausage in each bun.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Add Toppings: Sprinkle diced onions and shredded cheese over the sausages.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Drizzle with ketchup and mustard.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">Optional: Add sauerkraut, jalapeños, or pickles for extra flavor.</div>
+            </div>
+        </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

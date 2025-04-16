@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+</head>
+
+<body>
+    <h1>Chhang Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Chhang:</strong>
+            <br><br>
+            <li>1 kg millet or barley</li>
+            <li>5 liters of water</li>
+            <li>1-2 tbsp yeast (or traditional starter called "marcha")</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Millet/Barley:</strong>
+            <br><br>
+            <li> Rinse the millet or barley thoroughly under cold water and drain.</li>
+            <li> In a large pot, bring 5 liters of water to a boil.</li>
+            <li> Add the millet or barley to the boiling water and cook until they are soft and fully cooked.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Ferment the Mixture:</strong>
+            <br><br>
+            <li> Once the millet or barley is cooked, remove the pot from the heat and let it cool to room temperature.</li>
+            <li> Transfer the cooked millet or barley to a large fermentation vessel.</li>
+            <li> Add the yeast or traditional starter (marcha) to the mixture and mix well.</li>
+            <li> Cover the vessel with a cloth or lid and place it in a warm, undisturbed area for fermentation.</li>
+            <li> Let the mixture ferment for about 5-7 days, stirring occasionally to ensure even fermentation.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Strain and Serve:</strong>
+            <br><br>
+            <li> After the fermentation period, strain the liquid through a fine mesh sieve or cheesecloth to separate the solids from the liquid.</li>
+            <li> The strained liquid is your Chhang, ready to be enjoyed!</li>
+        </ol>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

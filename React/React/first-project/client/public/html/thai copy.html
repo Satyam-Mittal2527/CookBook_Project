@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thaicookbook</title>
+    <style>
+body {
+    background-color: #f5f5dc; /* Beige */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+    text-align: center;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Team Member Styling */
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+.values-box {
+    /* background-color: rgba(255, 250, 250, 0.8); Pastel green with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    transform: scale(1.05);
+}
+
+.float-box {
+    float: left; /* Float the box to the left */
+    width: calc(100% - 20px); /* Adjust width as needed */
+    margin: 10px; /* Add margin for spacing */
+    padding: 20px; /* Add padding for content */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    border: 3px solid #f49797; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transform: scale(1.05);
+}
+
+
+/* Button Styling */
+.learn-more {
+    background-color: #ff9999; /* Light red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #ff6666; /* Darker light red on hover */
+}
+
+/* Additional Button Styling */
+.values-box button {
+    background-color: #fb98af; /* Pastel green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.values-box button:hover {
+    background-color: #e0c5b2; /* Lighter pastel green on hover */
+}
+    </style>
+</head>
+<body>
+    <h1>Welcome to Thai Delights Cookbook</h1>
+    <p>Explore the rich flavors of Thailand through our curated recipes!</p>
+
+    <div class="content">
+        <section class="values-box">
+            <h2>Our Philosophy</h2>
+            <p>Thai cuisine blends sweet, sour, salty, and spicy flavors to create unforgettable dishes.</p>
+            <button>Discover More</button>
+        </section>
+
+        <section class="team">
+            <div class="team-member">
+                <img src="/Users/ishitagupta/Desktop/CookBook/public/assets/Pad_thai_noddles.jpg" alt="Pad Thai">
+                <h3>Pad Thai</h3>
+                <p>A classic stir-fried noodle dish with shrimp, tofu, and peanuts.</p>
+                <button class="learn-more" onclick="/Users/ishitagupta/Desktop/CookBook/public/html/pad_thai.html">Learn More</button>
+            </div>
+
+            <div class="team-member">
+                <img src="/Users/ishitagupta/Desktop/CookBook/public/assets/download.jpeg" alt="Tom Yum Soup">
+                <h3>Tom Yum Soup</h3>
+                <p>Spicy and sour soup with shrimp, lemongrass, and lime leaves.</p>
+                <button class="learn-more" onclick="/Users/ishitagupta/Desktop/CookBook/public/html/tom_yum.html">Learn More</button>
+            </div>
+
+            <div class="team-member">
+                <img src="/Users/ishitagupta/Desktop/CookBook/public/assets/green curry.jpeg" alt="Green Curry">
+                <h3>Green Curry</h3>
+                <p>Fragrant curry with chicken, eggplant, and coconut milk.</p>
+                <button class="learn-more" onclick="/Users/ishitagupta/Desktop/CookBook/public/html/green_curry.html">Learn More</button>
+            </div>
+        </section>
+
+        <div class="float-box">
+            <h2>Did You Know?</h2>
+            <p>Every Thai dish aims to incorporate the five primary tastes: sweet, sour, salty, spicy, and sometimes bitter, creating a complex flavor profile on the palate. 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

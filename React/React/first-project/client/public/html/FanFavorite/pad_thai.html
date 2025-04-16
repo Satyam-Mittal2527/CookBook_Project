@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/recipe2bg.jpg");
+        }
+
+        .head {
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            color: black;
+        }
+
+        .list {
+            background-color: #D5E7B8;
+            padding: 5px;
+            border-radius: 7px;
+
+        }
+
+        .fancy-arrow-list {
+            list-style-type: none;
+            padding-left: 100px;
+        }
+
+        .fancy-arrow-list li {
+            position: relative;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .fancy-arrow-list li:before {
+            content: "➤";
+            position: absolute;
+            left: 0;
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        .step-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(232, 194, 199);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid black;
+        }   
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: lightgoldenrodyellow;
+            background-color: darkred;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+
+
+        .step-content p {
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Pad Thai Noodles!</h1></center>
+    <h1>Ingredients:</h1>
+    <h3>Noodles: </h3>
+    <ul class="fancy-arrow-list list">
+        <li>200 grams rice noodles</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 chicken breast, sliced into thin strips</li>
+        <li>2 eggs, lightly beaten</li>
+        <li>1 cup bean sprouts</li>
+        <li>1 carrot, julienned</li>
+        <li>1 red bell pepper, sliced</li>
+        <li>2 green onions, chopped</li>
+        <li>1/4 cup roasted peanuts, chopped</li>
+        <li>Fresh cilantro for garnish</li>
+        <li>1 lime, cut into wedges</li>
+    </ul>
+    <h3>Pad Thai Sauce:</h3>
+    <ul class="fancy-arrow-list list">
+        <li>3 tablespoons fish sauce</li>
+        <li>3 tablespoons soy sauce</li>
+        <li>2 tablespoons tamarind paste</li>
+        <li>2 tablespoons brown sugar</li>
+        <li>1 tablespoon lime juice</li>
+        <li>1 teaspoon chili flakes (optional)</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Cook the rice noodles according to the package instructions. Drain and set aside.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">In a small bowl, mix all the Pad Thai sauce ingredients until well combined. Set aside.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Heat vegetable oil in a large skillet or wok over medium-high heat.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Add the minced garlic and stir-fry for about 30 seconds until fragrant.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Add the sliced chicken breast and cook until fully cooked through.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Push the chicken to one side of the skillet, then pour the beaten eggs into the empty side and scramble them until fully cooked.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Add the cooked rice noodles to the skillet and pour the Pad Thai sauce over the noodles.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-content">Toss everything together until well combined and heated through.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">9</div>
+            <div class="step-content">Add the bean sprouts, julienned carrot, red bell pepper, and chopped green onions. Stir-fry for another 2-3 minutes.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">10</div>
+            <div class="step-content">Remove from heat and garnish with chopped roasted peanuts and fresh cilantro.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">11</div>
+            <div class="step-content">Serve hot with lime wedges on the side.</div>
+        </div>
+    </div>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

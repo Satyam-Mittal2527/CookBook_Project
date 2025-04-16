@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Cuisine Recipes</title>
+    <link rel="stylesheet" href="/styles/western.css">
+</head>
+<body>
+    <h1>Western Cuisine Recipes</h1>
+<div class="recipe-container">
+    <div class="recipe-card">
+        <h2 class="recipe-title">Spaghetti Carbonara</h2>
+        <img src="/assets/1.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g spaghetti</li>
+                <li>100g pancetta</li>
+                <li>2 large eggs</li>
+                <li>50g Parmesan cheese</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook spaghetti according to package instructions.</li>
+                <li>In a pan, fry pancetta until crispy.</li>
+                <li>In a bowl, whisk eggs and mix with grated Parmesan.</li>
+                <li>Combine spaghetti with pancetta and remove from heat.</li>
+                <li>Quickly mix in the egg and cheese mixture, stirring to create a creamy sauce.</li>
+                <li>Season with salt and pepper to taste.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title">Beef Stroganoff</h2>
+        <img src="/assets/2.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>500g beef</li>
+                <li>1 onion</li>
+                <li>200g mushrooms</li>
+                <li>200ml sour cream</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Slice beef into strips and season with salt and pepper.</li>
+                <li>In a pan, cook beef until browned, then remove from pan.</li>
+                <li>Add sliced onion and mushrooms to the pan and sauté until soft.</li>
+                <li>Return beef to the pan and stir in sour cream.</li>
+                <li>Simmer for a few minutes until heated through.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" >Chicken Alfredo</h2>
+        <img src="/assets/3.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g fettuccine</li>
+                <li>200g chicken breast</li>
+                <li>100ml cream</li>
+                <li>50g Parmesan cheese</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook fettuccine according to package instructions.</li>
+                <li>Season chicken breast with salt and pepper and cook in a pan until golden.</li>
+                <li>Remove chicken and slice it.</li>
+                <li>In the same pan, add cream and Parmesan cheese, stirring until combined.</li>
+                <li>Add cooked fettuccine and sliced chicken to the sauce, mixing well.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Tacos</h2>
+        <img src="/assets/4.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>8 taco shells</li>
+                <li>500g ground beef</li>
+                <li>1 packet taco seasoning</li>
+                <li>Shredded lettuce</li>
+                <li>Chopped tomatoes</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook ground beef in a pan until browned.</li>
+                <li>Add taco seasoning and water, simmering for 5 minutes.</li>
+                <li>Fill taco shells with beef mixture and top with lettuce and tomatoes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Grilled Cheese Sandwich</h2>
+        <img src="/assets/5.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 slices of bread</li>
+                <li>2 slices of cheese</li>
+                <li>Butter</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Butter one side of each slice of bread.</li>
+                <li>Place cheese between the unbuttered sides of the bread.</li>
+                <li>Heat a pan over medium heat and grill the sandwich until golden brown on both sides.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Caesar Salad</h2>
+        <img src="/assets/6.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 head romaine lettuce</li>
+                <li>50g Parmesan cheese</li>
+                <li>Croutons</li>
+                <li>Caesar dressing</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Chop romaine lettuce and place in a bowl.</li>
+                <li>Add croutons and shaved Parmesan cheese.</li>
+                <li>Drizzle with Caesar dressing and toss to combine.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Meatloaf</h2>
+        <img src="/assets/7.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>500g ground beef</li>
+                <li>1 onion</li>
+                <li>1 egg</li>
+                <li>100g breadcrumbs</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 180°C.</li>
+                <li>In a bowl, mix ground beef, chopped onion, egg, breadcrumbs, salt, and pepper.</li>
+                <li>Shape mixture into a loaf and place in a baking dish.</li>
+                <li>Bake for 1 hour or until cooked through.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Chicken Pot Pie</h2>
+        <img src="/assets/8.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 pie crust</li>
+                <li>300g cooked chicken</li>
+                <li>1 cup mixed vegetables</li>
+                <li>1 cup chicken broth</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 200°C.</li>
+                <li>In a bowl, combine chicken, vegetables, and broth.</li>
+                <li>Pour mixture into pie crust and cover with another crust.</li>
+                <li>Cut slits in the top crust and bake for 30-35 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Clam Chowder</h2>
+        <img src="/assets/9.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>500g clams</li>
+                <li>1 onion</li>
+                <li>2 potatoes</li>
+                <li>500ml cream</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Chop onion and potatoes.</li>
+                <li>In a pot, cook onion and potatoes until soft.</li>
+                <li>Add clams and cream, simmering for 10 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">BBQ Ribs</h2>
+        <img src="/assets/10.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1kg pork ribs</li>
+                <li>BBQ sauce</li>
+                <li>Salt and pepper</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 150°C.</li>
+                <li>Season ribs with salt and pepper.</li>
+                <li>Bake ribs for 2 hours, brushing with BBQ sauce halfway through.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Macaroni and Cheese</h2>
+        <img src="/assets/11.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g macaroni</li>
+                <li>100g cheese</li>
+                <li>50ml milk</li>
+                <li>Butter</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook macaroni according to package instructions.</li>
+                <li>In a pot, melt butter and add milk and cheese.</li>
+                <li>Mix in cooked macaroni until well combined.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Shepherd's Pie</h2>
+        <img src="/assets/12.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>500g ground lamb</li>
+                <li>1 onion</li>
+                <li>2 carrots</li>
+                <li>Mashed potatoes</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook ground lamb and chopped onion until browned.</li>
+                <li>Add diced carrots and cook until tender.</li>
+                <li>Transfer mixture to a baking dish and top with mashed potatoes.</li>
+                <li>Bake at 200°C for 30 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Chicken Parmesan</h2>
+        <img src="/assets/13.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 chicken breasts</li>
+                <li>100g breadcrumbs</li>
+                <li>100g mozzarella cheese</li>
+                <li>Tomato sauce</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 200°C.</li>
+                <li>Coat chicken breasts in breadcrumbs.</li>
+                <li>Fry chicken until golden, then place in a baking dish.</li>
+                <li>Top with tomato sauce and mozzarella cheese, then bake for 20 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Fish and Chips</h2>
+        <img src="/assets/14.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 fish fillets</li>
+                <li>200g potatoes</li>
+                <li>Flour</li>
+                <li>Oil for frying</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Peel and cut potatoes into chips, then fry until golden.</li>
+                <li>Coat fish fillets in flour and fry until crispy.</li>
+                <li>Serve with chips and tartar sauce.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Pancakes</h2>
+        <img src="/assets/15.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g flour</li>
+                <li>2 eggs</li>
+                <li>300ml milk</li>
+                <li>Butter</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>In a bowl, mix flour, eggs, and milk until smooth.</li>
+                <li>Heat a non-stick pan and pour in batter to form pancakes.</li>
+                <li>Cook until bubbles form, then flip and cook until golden.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Lasagna</h2>
+        <img src="/assets/16.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g lasagna sheets</li>
+                <li>500g ground beef</li>
+                <li>400g tomato sauce</li>
+                <li>100g cheese</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 180°C.</li>
+                <li>Layer lasagna sheets, ground beef, tomato sauce, and cheese in a baking dish.</li>
+                <li>Bake for 45 minutes until golden and bubbly.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Stuffed Bell Peppers</h2>
+        <img src="/assets/17.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>4 bell peppers</li>
+                <li>300g ground beef</li>
+                <li>100g rice</li>
+                <li>Tomato sauce</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 180°C.</li>
+                <li>Cook rice according to package instructions.</li>
+                <li>Mix cooked rice with ground beef and tomato sauce.</li>
+                <li>Stuff mixture into halved bell peppers and bake for 30 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Baked Ziti</h2>
+        <img src="/assets/18.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g ziti pasta</li>
+                <li>400g marinara sauce</li>
+                <li>100g mozzarella cheese</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook ziti according to package instructions.</li>
+                <li>Mix cooked ziti with marinara sauce and half of the cheese.</li>
+                <li>Transfer to a baking dish, top with remaining cheese, and bake for 20 minutes.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Fettuccine Alfredo</h2>
+        <img src="/assets/19.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g fettuccine</li>
+                <li>100ml cream</li>
+                <li>50g Parmesan cheese</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Cook fettuccine according to package instructions.</li>
+                <li>In a saucepan, heat cream and stir in Parmesan cheese until melted.</li>
+                <li>Toss cooked fettuccine with the sauce and serve.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <h2 class="recipe-title" onclick="toggleRecipe(this)">Chocolate Chip Cookies</h2>
+        <img src="/assets/20.png" id="food"></img>
+        <div class="recipe-content">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>200g flour</li>
+                <li>100g sugar</li>
+                <li>100g butter</li>
+                <li>100g chocolate chips</li>
+            </ul>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Preheat oven to 180°C.</li>
+                <li>In a bowl, cream together butter and sugar.</li>
+                <li>Add flour and chocolate chips, mixing until combined.</li>
+                <li>Drop spoonfuls onto a baking sheet and bake for 10-12 minutes.</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<br><br>
+
+<center>
+<button onclick="window.location.href='/html/mainPages/home.html'" 
+        style="background-color: #ff7369; color: white; font-size: 16px; 
+               font-family: Arial, sans-serif; padding: 10px 20px; 
+               border: none; border-radius: 12px; cursor: pointer; 
+               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: transform 0.2s;">
+    Home Page
+</button>
+
+
+<footer>
+    <hr>
+        <div id="tm">@2025, All Rights Reserved &#8482 </div>
+</footer>
+</center>
+
+<script>
+    document.querySelectorAll('.recipe-card').forEach(card => {
+      card.addEventListener('click', function() {
+        this.classList.toggle('active');
+      });
+    });
+    </script>
+
+
+</body>
+</html>

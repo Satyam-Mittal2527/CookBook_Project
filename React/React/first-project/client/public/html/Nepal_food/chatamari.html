@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+<body>
+    <h1>Chatamari Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Chatamari:</strong>
+            <br><br>
+            <li>2 cups rice flour</li>
+            <li>1 cup water</li>
+            <li>1/2 tsp salt</li>
+            <br><hr><br>
+            <strong>For Topping:</strong>
+            <br><br>
+            <li>200g minced meat (chicken, lamb, or pork)</li>
+            <li>1 onion, finely chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>1/2 cup grated cheese</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1-inch piece of ginger, minced</li>
+            <li>1-2 green chilies, chopped</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1/2 tsp cumin powder</li>
+            <li>Salt to taste</li>
+            <li>2 tbsp vegetable oil</li>
+            <li>Fresh coriander leaves for garnish</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Batter:</strong>
+            <br><br>
+            <li> In a large mixing bowl, combine the rice flour, water, and salt. Mix well to form a smooth batter. The consistency should be similar to pancake batter.</li>
+            <li> Let the batter rest for about 15-20 minutes.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Topping:</strong>
+            <br><br>
+            <li> In a pan, heat oil and add chopped onions, garlic, ginger, and green chilies. Sauté until the onions turn golden brown.</li>
+            <li> Add the minced meat, turmeric powder, cumin powder, and salt. Cook until the meat is browned and cooked through.</li>
+            <li> Add chopped tomatoes and cook until they are soft. Set the topping mixture aside.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Cook the Chatamari:</strong>
+            <br><br>
+            <li> Heat a non-stick pan or griddle over medium heat.</li>
+            <li> Pour a ladleful of the batter onto the pan and spread it evenly to form a thin pancake.</li>
+            <li> Cook the pancake for a few minutes until the bottom is set.</li>
+            <li> Spread the prepared topping mixture evenly over the pancake.</li>
+            <li> Sprinkle grated cheese over the topping and cover the pan with a lid.</li>
+            <li> Cook for an additional 3-4 minutes until the cheese melts and the Chatamari is cooked through.</li>
+            <li> Garnish with fresh coriander leaves.</li>
+        </ol>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

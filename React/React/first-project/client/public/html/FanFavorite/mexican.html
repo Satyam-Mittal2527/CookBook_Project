@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Spicy Mexican!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>2 tablespoons olive oil</li>
+        <li>1 onion, finely chopped</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 jalapeño, finely chopped</li>
+        <li>500 grams ground beef or chicken</li>
+        <li>1 can (400 grams) black beans, rinsed and drained</li>
+        <li>1 can (400 grams) corn kernels, drained</li>
+        <li>1 can (400 grams) diced tomatoes</li>
+        <li>1 teaspoon chili powder</li>
+        <li>1 teaspoon cumin powder</li>
+        <li>1 teaspoon paprika</li>
+        <li>1/2 teaspoon cayenne pepper (adjust to taste)</li>
+        <li>Salt and pepper to taste</li>
+        <li>Fresh cilantro for garnish</li>
+        <li>Sour cream, guacamole, and salsa for serving</li>
+    </ul>
+    <center><h1>Instructions:</h1></center>
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Heat olive oil in a large skillet over medium heat.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">Add the finely chopped onion, minced garlic, and jalapeño. Sauté until the onion is translucent and fragrant.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Add the ground beef or chicken and cook until browned and fully cooked.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Stir in the black beans, corn kernels, and diced tomatoes.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Add the chili powder, cumin powder, paprika, and cayenne pepper. Season with salt and pepper to taste.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Cook for another 10-15 minutes, stirring occasionally, until the mixture is well combined and heated through.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Garnish with fresh cilantro and serve hot with sour cream, guacamole, and salsa.</div>
+        </div>
+    </div>    
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

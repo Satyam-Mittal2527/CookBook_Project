@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/neprecipebg.png");
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .ins {
+            background-color: rgb(220, 220, 200);
+            padding: 50px;
+            border-radius: 7px;
+
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-decoration: underline;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #d45940;
+            font-size: 35px;
+            text-decoration:double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #4f4f4f;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            background-color: #fff0e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section ul li::before {
+            content: "✓";
+            color: #d45940;
+            font-size: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sukuti Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Sukuti:</strong>
+            <br><br>
+            <li>500g dried meat (buffalo, lamb, or beef)</li>
+            <li>1 onion, finely chopped</li>
+            <li>2-3 green chilies, chopped</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1/2 tsp cumin powder</li>
+            <li>1/2 tsp coriander powder</li>
+            <li>1 tsp chili powder (adjust to taste)</li>
+            <li>1 tsp mustard oil</li>
+            <li>1 tbsp roasted sesame seeds</li>
+            <li>1-inch piece of ginger, minced</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 tbsp lemon juice</li>
+            <li>Salt to taste</li>
+            <li>Fresh coriander leaves for garnish</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Sukuti:</strong>
+            <br><br>
+            <li> In a large mixing bowl, combine the dried meat with turmeric powder, cumin powder, coriander powder, chili powder, and salt. Mix well to coat the meat evenly with the spices.</li>
+            <li> In a pan, heat mustard oil and add minced ginger and garlic. Sauté until fragrant.</li>
+            <li> Add the spiced meat to the pan and cook until it is browned and cooked through.</li>
+            <li> Remove the meat from the heat and let it cool slightly.</li>
+            <li> In a bowl, mix the cooked meat with chopped onions, green chilies, roasted sesame seeds, lemon juice, and fresh coriander leaves.</li>
+        </ol>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

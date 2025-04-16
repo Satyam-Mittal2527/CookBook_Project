@@ -1,0 +1,46 @@
+body {
+    background-color: #fff; /* White background for contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #c0392b; /* Dark red for the main title */
+    text-align: center;
+}
+
+.recipe-card {
+    background-color: #f2d7d5; /* Light red background for cards */
+    border: 2px solid #e74c3c; /* Bright red border */
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 15px;
+    width: 300px; /* Card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.recipe-title {
+    color: #c0392b; /* Dark red for titles */
+    font-size: 1.5em;
+}
+
+.recipe-content {
+    margin-top: 10px;
+}
+
+h3 {
+    color: #e74c3c; /* Bright red for subheadings */
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}

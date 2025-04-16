@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookbook Slider</title>
+    <style>
+        /* Reset & Base Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Fullscreen Slider Container */
+        .slider-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background: #f5f5f5;
+        }
+
+        /* Horizontal Slides */
+        .slider-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        /* Individual Slide */
+        .slide {
+            min-width: 100vw;
+            height: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Slide Background Image */
+        .slide-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+        }
+
+        /* Dark overlay for text readability */
+        .slide-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 2;
+        }
+
+        /* Text Content */
+        .slide-content {
+            position: relative;
+            z-index: 3; /* Above overlay */
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 80%;
+        }
+
+        .slide-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .slide-content p {
+            font-size: 1.5rem;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        /* Navigation Arrows */
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 4;
+        }
+
+        .slider-nav button {
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin: 0 20px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Slide Indicators */
+        .slide-indicators {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 4;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .indicator.active {
+            background: white;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider-track">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img class="slide-bg" src="/assets/slide1.png" alt="Cooking Background">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Welcome to our COOKBOOK</h1>
+                    <hr>
+                    <p>"Where Cultures Blend and Flavors Shine!"</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img class="slide-bg" src="/assets/slide2.gif" alt="Cooking Background">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Discover Recipes</h1>
+                    <hr>
+                    <p>From traditional to modern fusion</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img class="slide-bg" src="/assets/slide3.jpg" alt="Cooking Background">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Unlock our Recipes now!</h1>
+                    <hr>
+                    <p>"Chef-Approved Recipes for Discerning Cooks"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-nav">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+
+        <div class="slide-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+            <div class="indicator" data-index="2"></div>
+        </div>
+    </div>
+
+    <script>
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        let autoSlideInterval;
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Update indicators
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 5000); // Change every 5 seconds
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Manual navigation
+        document.querySelector('.next').addEventListener('click', () => {
+            nextSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            prevSlide();
+            stopAutoSlide();
+            startAutoSlide();
+        });
+
+        // Click indicators
+        indicators.forEach(indicator => {
+            indicator.addEventListener('click', () => {
+                currentIndex = parseInt(indicator.dataset.index);
+                updateSlider();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+
+        // Start auto-sliding
+        startAutoSlide();
+
+        // Pause on hover
+        document.querySelector('.slider-container').addEventListener('mouseenter', stopAutoSlide);
+        document.querySelector('.slider-container').addEventListener('mouseleave', startAutoSlide);
+    </script>
+</body>
+</html>

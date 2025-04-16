@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/neprecipebg.png");
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .ins {
+            background-color: rgb(220, 220, 200);
+            padding: 50px;
+            border-radius: 7px;
+
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-decoration: underline;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #d45940;
+            font-size: 35px;
+            text-decoration:double;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #4f4f4f;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            background-color: #fff0e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section ul li::before {
+            content: "✓";
+            color: #d45940;
+            font-size: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yomari Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Yomari Dough:</strong>
+            <br><br>
+            <li>2 cups rice flour</li>
+            <li>1 cup hot water</li>
+            <li>1/2 tsp salt</li>
+            <br><hr><br>
+            <strong>For Filling:</strong>
+            <br><br>
+            <li>1 cup jaggery (or brown sugar)</li>
+            <li>1 cup grated coconut</li>
+            <li>1/2 cup roasted sesame seeds</li>
+            <li>1/2 tsp ground cardamom</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Dough:</strong>
+            <br><br>
+            <li> In a large mixing bowl, combine the rice flour and salt.</li>
+            <li> Gradually add hot water to the rice flour, mixing continuously, until a smooth and pliable dough forms.</li>
+            <li> Knead the dough for a few minutes, then cover it with a damp cloth and let it rest for about 30 minutes.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Filling:</strong>
+            <br><br>
+            <li> In a pan, melt the jaggery (or brown sugar) over low heat.</li>
+            <li> Add the grated coconut, roasted sesame seeds, and ground cardamom to the melted jaggery.</li>
+            <li> Mix well and cook for a few minutes until the mixture thickens. Remove from heat and let it cool.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Shape and Fill the Yomari:</strong>
+            <br><br>
+            <li> Divide the dough into small portions and roll each portion into a ball.</li>
+            <li> Flatten each ball and shape it into a cone, creating a hollow center for the filling.</li>
+            <li> Fill the hollow center with the jaggery-coconut mixture.</li>
+            <li> Seal the open end of the cone by pinching the dough together.</li>
+        </ol>
+        <br>
+        <ol>
+            <strong style="font-size: 23px;">⤷Steam the Yomari:</strong>
+            <br><br>
+            <li> Place the filled Yomari in a steamer and steam for about 15-20 minutes, or until the dough is cooked through and the Yomari are firm.</li>
+        </ol>
+        <br>
+      
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/recipe2bg.jpg");
+        }
+
+        .head {
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            color: black;
+        }
+
+        .list {
+            background-color: #D5E7B8;
+            padding: 5px;
+            border-radius: 7px;
+
+        }
+
+        .fancy-arrow-list {
+            list-style-type: none;
+            padding-left: 100px;
+        }
+
+        .fancy-arrow-list li {
+            position: relative;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .fancy-arrow-list li:before {
+            content: "➤";
+            position: absolute;
+            left: 0;
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        .step-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(232, 194, 199);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid black;
+        }   
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: lightgoldenrodyellow;
+            background-color: darkred;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+
+
+        .step-content p {
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center><h1 style="text-decoration: underline;">Broiled Steak!</h1></center>
+        <h1>Ingredients:</h1>
+        <ul class="fancy-arrow-list list">
+            <li>2 ribeye steaks (about 1-inch thick)</li>
+            <li>2 tablespoons olive oil</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 teaspoon fresh rosemary, chopped</li>
+            <li>1 teaspoon fresh thyme, chopped</li>
+            <li>Salt and pepper to taste</li>
+            <li>1 tablespoon butter</li>
+            <li>Lemon wedges for serving</li>
+        </ul>
+        <center><h1>Instructions:</h1></center>
+        <div class="step-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">Preheat your oven's broiler and place the oven rack about 6 inches from the heat source.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">Pat the steaks dry with a paper towel and season both sides with salt and pepper.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">In a small bowl, mix together the olive oil, minced garlic, chopped rosemary, and thyme.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">Rub the mixture all over the steaks.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">Place the steaks on a broiler pan or a baking sheet lined with aluminum foil.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-content">Broil the steaks for about 4-5 minutes on each side for medium-rare, or until they reach your desired level of doneness.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-content">Remove the steaks from the oven and let them rest for 5 minutes.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">8</div>
+                <div class="step-content">While the steaks are resting, melt the butter in a small pan and drizzle it over the steaks before serving.</div>
+            </div>
+            <div class="step">
+                <div class="step-number">9</div>
+                <div class="step-content">Serve the steaks with lemon wedges on the side.</div>
+            </div>
+        </div>  
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+</head>
+
+<body>
+    <h1>Dhido Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Dhido:</strong>
+            <br><br>
+            <li>2 cups buckwheat flour or millet flour</li>
+            <li>4 cups water</li>
+            <li>1/2 tsp salt</li>
+            <li>2 tbsp ghee or clarified butter (optional, for flavor)</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Dhido:</strong>
+            <br><br>
+            <li> In a large pot, bring 4 cups of water to a boil.</li>
+            <li> Add salt to the boiling water.</li>
+            <li> Gradually add the buckwheat or millet flour to the boiling water, stirring continuously to avoid lumps.</li>
+            <li> Reduce the heat to low and continue stirring the mixture with a wooden spatula.</li>
+            <li> Cook the Dhido for about 10-15 minutes, stirring constantly, until it thickens and pulls away from the sides of the pot.</li>
+            <li> If using ghee or clarified butter, add it to the Dhido and mix well.</li>
+        </ol>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>

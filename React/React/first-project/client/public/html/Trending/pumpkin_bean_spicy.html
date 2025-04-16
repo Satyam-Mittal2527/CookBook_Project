@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/recipe2bg.jpg");
+        }
+
+        .head {
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            color: black;
+        }
+
+        .list {
+            background-color: #D5E7B8;
+            padding: 5px;
+            border-radius: 7px;
+
+        }
+
+        .fancy-arrow-list {
+            list-style-type: none;
+            padding-left: 100px;
+        }
+
+        .fancy-arrow-list li {
+            position: relative;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .fancy-arrow-list li:before {
+            content: "➤";
+            position: absolute;
+            left: 0;
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        .step-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(232, 194, 199);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid black;
+        }   
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: lightgoldenrodyellow;
+            background-color: darkred;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+
+
+        .step-content p {
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <center><h1 style="text-decoration: underline;">Pumpkin Bean Spicy!</h1></center>
+        <h1> Ingredients: </h1>
+        <ul class="fancy-arrow-list list">
+            <li>2 cups pumpkin, diced</li>
+            <li>1 cup black beans (cooked or canned, rinsed and drained)</li>
+            <li>1 cup kidney beans (cooked or canned, rinsed and drained)</li>
+            <li>1 onion, finely chopped</li>
+            <li> 2 cloves garlic, minced</li>
+            <li> 1 red bell pepper, diced</li>
+            <li>2 tomatoes, diced </li>
+            <li> 1 cup vegetable broth</li>
+            <li> 1 tablespoon olive oil</li>
+            <li>1 teaspoon cumin powder </li>
+            <li> 1 teaspoon chili powder</li>
+            <li> 1 teaspoon paprika</li>
+            <li>1/2 teaspoon cayenne pepper (adjust to taste) </li>
+            <li> Salt and pepper to taste</li>
+            <li> Fresh cilantro for garnish</li>
+
+
+        </ul>
+
+    <center><h1> Instructions: </h1></center>
+    <p></p>
+        
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Peel and dice the pumpkin.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">Rinse and drain the black beans and kidney beans.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Finely chop the onion and mince the garlic.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Dice the red bell pepper and tomatoes.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Sauté the Vegetables and simultaneouly heat olive oil in a large pot over medium heat.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Add the chopped onion and minced garlic, sauté until translucent and fragrant (about 3-4 minutes)</div>
+        </div>
+        <div class="step">
+            <div class="step-number">7</div>
+            <div class="step-content">Add the Spices: cumin powder, chili powder, paprika, and cayenne pepper to the pot.
+        </div>
+        </div>
+        <div class="step">
+            <div class="step-number">8</div>
+            <div class="step-content">Stir well to coat the onion and garlic with the spices.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">9</div>
+            <div class="step-content">Cook the Vegetables and Beans.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">10</div>
+            <div class="step-content">Add diced pumpkin, bell pepper, and tomatoes to the pot.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">11</div>
+            <div class="step-content">Cook for about 5 minutes until the vegetables start to soften.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">12</div>
+            <div class="step-content">Add the black beans and kidney beans to the pot.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">13</div>
+            <div class="step-content">Pour in the vegetable broth and bring the mixture to a boil.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">14</div>
+            <div class="step-content">Simmer the Stew: Reduce the heat to low and let the stew simmer for about 20-25 minutes until the pumpkin is tender and the flavors are well combined.
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-number">15</div>
+            <div class="step-content">Season with salt and pepper to taste.</div>
+        </div>
+
+        <div class="step">
+            <div class="step-number">16</div>
+            <div class="step-content">Garnish and Serve.</div>
+        </div>
+    </div>
+</body>
+</html>

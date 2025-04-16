@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("/assets/recipe2bg.jpg");
+        }
+
+        .head {
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 35px;
+            color: black;
+        }
+
+        .list {
+            background-color: #D5E7B8;
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        .fancy-arrow-list {
+            list-style-type: none;
+            padding-left: 100px;
+        }
+
+        .fancy-arrow-list li {
+            position: relative;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+
+        .fancy-arrow-list li:before {
+            content: "➤";
+            position: absolute;
+            left: 0;
+            color: palevioletred;
+            font-size: 20px;
+        }
+
+        .step-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(232, 194, 199);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid black;
+        }   
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            font-size: 20px;
+            font-weight: bold;
+            color: lightgoldenrodyellow;
+            background-color: darkred;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content p {
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <center><h1 style="text-decoration: underline;">Sashlik with Vegetables Recipe!</h1></center>
+    <h1>Ingredients:</h1>
+    <ul class="fancy-arrow-list list">
+        <li>500 grams chicken breast or thigh (cut into chunks)</li>
+        <li>2 bell peppers (red and yellow, cut into chunks)</li>
+        <li>1 large onion (cut into chunks)</li>
+        <li>200 grams cherry tomatoes</li>
+        <li>2 tablespoons olive oil</li>
+        <li>1 tablespoon lemon juice</li>
+        <li>3 cloves garlic (minced)</li>
+        <li>1 teaspoon paprika</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon dried oregano</li>
+        <li>Salt and pepper to taste</li>
+        <li>Wooden or metal skewers</li>
+    </ul>
+
+    <center><h1>Instructions:</h1></center>
+    <p></p>
+        
+    <div class="step-container">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">Prepare the Marinade: In a large bowl, mix together the olive oil, lemon juice, minced garlic, paprika, ground cumin, dried oregano, salt, and pepper.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">Marinate the Chicken: Add the chicken chunks to the marinade and toss to coat. Cover the bowl and refrigerate for at least 1 hour (or up to overnight) to let the flavors meld.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">Prepare the Skewers: If using wooden skewers, soak them in water for at least 30 minutes to prevent burning. Thread the marinated chicken, bell pepper chunks, onion chunks, and cherry tomatoes onto the skewers, alternating between the ingredients.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">Preheat the Grill: Preheat your grill to medium-high heat. Lightly oil the grill grates to prevent sticking.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">Grill the Sashlik: Place the skewers on the grill and cook for about 10-15 minutes, turning occasionally, until the chicken is cooked through and has nice grill marks.</div>
+        </div>
+        <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">Serve and Enjoy: Remove the skewers from the grill and let them rest for a few minutes. Serve the sashlik with a side of your favorite dipping sauce or fresh salad. Enjoy!</div>
+        </div>
+    </div>
+</body>
+</html>

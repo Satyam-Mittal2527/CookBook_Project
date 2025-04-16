@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dal Bhat Recipe</title>
+    <link rel="stylesheet" href="/styles/recipe.css">
+</head>
+
+<body>
+    <h1>Ghonghi Recipe!</h1>
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <strong>For Ghonghi:</strong>
+            <br><br>
+            <li>500g ghonghi (freshwater snails)</li>
+            <li>1 onion, finely chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1-inch piece of ginger, minced</li>
+            <li>2-3 green chilies, chopped</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1/2 tsp cumin powder</li>
+            <li>1/2 tsp coriander powder</li>
+            <li>1/2 tsp chili powder (adjust to taste)</li>
+            <li>1 tsp mustard seeds</li>
+            <li>1/4 tsp asafoetida (hing)</li>
+            <li>1 tsp fenugreek seeds</li>
+            <li>2 tbsp vegetable oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh coriander leaves for garnish</li>
+        </ul>
+    </div>
+    <div class="ins">
+        <hr><hr>
+        <h2>Instructions</h2>
+        <ol>
+            <strong style="font-size: 23px;">⤷Prepare the Ghonghi:</strong>
+            <br><br>
+            <li> Clean the ghonghi thoroughly under cold water to remove any dirt and impurities.</li>
+            <li> In a large pot, heat oil and add mustard seeds, fenugreek seeds, and asafoetida. Let them splutter.</li>
+            <li> Add chopped onions, garlic, ginger, and green chilies. Sauté until the onions turn golden brown.</li>
+            <li> Add chopped tomatoes, turmeric powder, cumin powder, coriander powder, chili powder, and salt. Cook until the tomatoes are soft and mushy.</li>
+            <li> Add the cleaned ghonghi to the pot and mix well. Cook for a few minutes.</li>
+            <li> Pour in enough water to cover the ghonghi. Bring it to a boil, then reduce the heat and let it simmer until the ghonghi is fully cooked and the flavors are well combined.</li>
+            <li> Garnish with fresh coriander leaves.</li>
+        </ol>
+    </div>
+    <div class="checkout">
+        <h1>COOKBOOK</h1>
+        <div id="payment">
+            <div id="payment_method"><i class="fa-solid fa-wallet"></i><input type="radio" name="pay" checked> UPI Payment</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-visa fa-2x"></i><input type="radio" name="pay" checked> Pay with Visa Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-mastercard fa-2x"></i>  </i><input type="radio" name="pay" checked> Pay with Master Card</div>
+            <div id="payment_method"><i class="fa-brands fa-cc-paypal fa-2x"></i> </i><input type="radio" name="pay" checked> Pay with PayPal</div>
+            <div id="pay_here">
+                <div class="box">
+                    <h3>Amount to be Paid</h3>
+                    <p>Rs 200/-</p>
+                </div>
+                <button onclick="noBlur()" id="pay">Pay Here</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function noBlur() {
+            alert("Payment Successful");
+            document.querySelector(".checkout").style.display = "none";
+            document.querySelector(".container").style.filter="blur(0px)"
+        }
+    </script>
+</body>
+</html>
